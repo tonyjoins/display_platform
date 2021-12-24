@@ -60,22 +60,119 @@ export const constantRoutes = [
     component: Layout,
     redirect: '/example/table',
     name: 'Example',
-    meta: { title: 'Example', icon: 'el-icon-s-help' },
+    meta: { title: '系统负荷预测', icon: 'el-icon-s-help' },
     children: [
       {
         path: 'table',
         name: 'Table',
         component: () => import('@/views/table/index'),
-        meta: { title: 'Table', icon: 'table' }
+        meta: { title: '数据处理', icon: 'table' }
       },
       {
         path: 'tree',
         name: 'Tree',
         component: () => import('@/views/tree/index'),
-        meta: { title: 'Tree', icon: 'tree' }
-      }
+        meta: { title: '系统负荷预测', icon: 'tree' }
+      },
+    //   {
+    //     path: 'tree',
+    //     name: 'Tree',
+    //     component: () => import('@/views/tree/index'),
+    //     meta: { title: '历史准去率查询', icon: 'tree' }
+    //   },
+    //   {
+    //     path: 'tree',
+    //     name: 'Tree',
+    //     component: () => import('@/views/tree/index'),
+    //     meta: { title: '日志查询', icon: 'tree' }
+    //   },
+    //   {
+    //     path: 'tree',
+    //     name: 'Tree',
+    //     component: () => import('@/views/tree/index'),
+    //     meta: { title: '模型管理', icon: 'tree' }
+    //   }
     ]
   },
+
+//   {
+//     path: '/example',
+//     component: Layout,
+//     redirect: '/example/table',
+//     name: 'Example',
+//     meta: { title: '母线负荷预测', icon: 'el-icon-s-help' },
+//     children: [
+//       {
+//         path: 'table',
+//         name: 'Table',
+//         component: () => import('@/views/table/index'),
+//         meta: { title: '数据处理', icon: 'table' }
+//       },
+//       {
+//         path: 'tree',
+//         name: 'Tree',
+//         component: () => import('@/views/tree/index'),
+//         meta: { title: '系统负荷预测', icon: 'tree' }
+//       },
+//       {
+//         path: 'tree',
+//         name: 'Tree',
+//         component: () => import('@/views/tree/index'),
+//         meta: { title: '历史准去率查询', icon: 'tree' }
+//       },
+//       {
+//         path: 'tree',
+//         name: 'Tree',
+//         component: () => import('@/views/tree/index'),
+//         meta: { title: '日志查询', icon: 'tree' }
+//       },
+//       {
+//         path: 'tree',
+//         name: 'Tree',
+//         component: () => import('@/views/tree/index'),
+//         meta: { title: '模型管理', icon: 'tree' }
+//       }
+//     ]
+//   },
+//   {
+//     path: '/example',
+//     component: Layout,
+//     redirect: '/example/table',
+//     name: 'Example',
+//     meta: { title: '新能源功率预测', icon: 'el-icon-s-help' },
+//     children: [
+//       {
+//         path: 'table',
+//         name: 'Table',
+//         component: () => import('@/views/table/index'),
+//         meta: { title: '数据处理', icon: 'table' }
+//       },
+//       {
+//         path: 'tree',
+//         name: 'Tree',
+//         component: () => import('@/views/tree/index'),
+//         meta: { title: '系统负荷预测', icon: 'tree' }
+//       },
+//       {
+//         path: 'tree',
+//         name: 'Tree',
+//         component: () => import('@/views/tree/index'),
+//         meta: { title: '历史准去率查询', icon: 'tree' }
+//       },
+//       {
+//         path: 'tree',
+//         name: 'Tree',
+//         component: () => import('@/views/tree/index'),
+//         meta: { title: '日志查询', icon: 'tree' }
+//       },
+//       {
+//         path: 'tree',
+//         name: 'Tree',
+//         component: () => import('@/views/tree/index'),
+//         meta: { title: '模型管理', icon: 'tree' }
+//       }
+//     ]
+//   },
 
   {
     path: '/form',

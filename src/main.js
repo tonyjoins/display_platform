@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2021-12-24 12:46:27
+ * @LastEditTime: 2021-12-24 15:49:12
+ * @LastEditors: Please set LastEditors
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: \git_tmp\display_platform\src\main.js
+ */
 import Vue from 'vue'
 
 import 'normalize.css/normalize.css' // A modern alternative to CSS resets
@@ -14,7 +22,10 @@ import router from './router'
 
 import '@/icons' // icon
 import '@/permission' // permission control
+// import * as echarts from 'echarts/lib/echarts';
+import * as echarts from 'echarts';
 
+Vue.prototype.$echarts = echarts;
 /**
  * If you don't want to use mock-server
  * you want to use MockJs for mock api
